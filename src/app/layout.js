@@ -1,7 +1,15 @@
-import { Inter } from "next/font/google";
+import { Inter, Koulen } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ 
+  subsets: ["latin"], 
+  variable: '--font-inter'
+  });
+const koulen = Koulen({ 
+  subsets: ["latin"], 
+  weight: '400',
+  variable: '--font-koulen'
+  });
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +18,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${inter.variable} ${koulen.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

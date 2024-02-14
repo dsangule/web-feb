@@ -16,8 +16,10 @@ function LandingPage() {
   };
   return (
     <div>
-      <div className="bg-gradient-to-t from-[#58311C] to-[#A4592F] h-96">
-        <Header />
+      <div className="bg-gradient-to-t from-[#58311C] to-[#A4592F] h-52 -skew-y-3 -translate-y-12">
+        <div className="skew-y-3 translate-y-12">
+          <Header />
+        </div>
       </div>
         <p className="text-xl">Landing Page
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis unde, qui facere ea enim, voluptas porro reiciendis fugiat mollitia, ducimus nihil quasi natus sapiente laudantium repudiandae earum! Officiis, nobis perferendis!
