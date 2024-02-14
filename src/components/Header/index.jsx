@@ -3,17 +3,17 @@ import styles from './Header.module.css'
 
 function Header() {
   return (
-    <nav className="bg-transparent w-full flex justify-between">
+    <nav className="w-full flex justify-between">
         <Link href='/' className="my-auto text-white pl-12 text-2xl">
-          <h2>JNU Sayz</h2>
+          <h2 className="font-mono text-4xl">JNU Sayz</h2>
         </Link>
 
-        <div className={`${styles.nav_bar} flex`}>
-            <Link href='/' className={`p-4 font-mono text-white hover:text-[#1e2020]`}>Community Chat</Link>
-            <Link href='/' className={`p-4 font-mono text-white hover:text-[#1e2020]`}>Clubs</Link>
-            <Link href='/' className={`p-4 font-mono text-white hover:text-[#1e2020]`}>Events</Link>
-            <Link href='/' className={`p-4 font-mono text-white hover:text-[#1e2020]`}>Notices</Link>
-            <Link href='/' className={`p-4 font-mono text-white hover:text-[#1e2020]`}>About Us</Link>
+        <div className={`${styles.nav_bar} flex mr-3`}>
+            <Link href='/clubs' className={`${styles.nav}`}>Clubs</Link>
+            <Link href='/chat' className={`${styles.nav}`}>Community Chat</Link>
+            <Link href='/events' className={`${styles.nav}`}>Events</Link>
+            <Link href='/notices' className={`${styles.nav}`}>Notices</Link>
+            <Link href='/about' className={`${styles.nav}`}>About Us</Link>
         </div>
     </nav>
   )

@@ -1,7 +1,24 @@
+@tailwind utilities;
+
 .nav_bar{
     font-size: 32px;
     font-weight: 400;
     line-height: 58px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+@layer utilities {
+    .nav{
+        @apply relative font-mono tracking-[1px] p-4 text-white bg-transparent
+    }
+    .nav:hover {
+        @apply text-[#1e2020] bg-gradient-to-b from-[#4d2d1c40] to-transparent
+    }
+    .nav::after{
+        @apply content-[''] bg-[#1e2020] h-[3px] w-[0%] left-1/2 bottom-[15px] rounded-xl absolute duration-300 mx-auto
+    }
+    .nav:hover::after{
+        @apply w-[100%] left-0
+    }
 }
