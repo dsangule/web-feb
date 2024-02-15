@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from './Header.module.css'
 import { usePathname } from 'next/navigation';
 
-function Header() {
+function Header({headStyle}) {
   const pathname = usePathname(); 
   const navItems = [
     {
@@ -19,29 +19,28 @@ function Header() {
     },
     {
       key: 3,
-      name: "Events",
-      href: "/events"
-    },
-    {
-      key: 4,
       name: "Notices",
       href: "/notices"
     },
     {
-      key: 5,
+      key: 4,
       name: "About Us",
       href: "/about"
     },
   ]
   return (
-    <nav className="w-full flex justify-between">
+    <nav 
+    className={`
+    w-full flex justify-between 
+    ${(headStyle==="1"?"":"bg-gradient-to-t from-[#454C40] to-[#545539]")}
+    `}>
         <Link href='/' className="my-auto text-white pl-12 text-2xl">
           <h2 className="font-mono text-4xl">JNU Sayz</h2>
         </Link>
 
         <div className={`${styles.nav_bar} flex mr-3`}>
           {navItems.map(item=>(
-              <Link key={item.key} href={item.href} className={`${styles.nav} ${(item.href==pathname)?styles.active_nav:''}`}>{item.name}</Link>
+              <Link key={item.key} href={item.href} className={`${styles.nav} ${(item.href==pathname)?styles.active_nav:''} ${(headStyle==="1"?styles.nav_lp:styles.nav_default)}`}>{item.name}</Link>
           ))}
         </div>
     </nav>

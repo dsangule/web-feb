@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../Header'
 
 function Notices() {
   return (
-    <div>Notices</div>
+    <div>
+      <Header />
+      Notices
+    </div>
   )
 }
 

@@ -1,12 +1,11 @@
-import Layout from '@/components/Layout'
 import Notices from '@/components/Notices'
 import React from 'react'
 
 function notices() {
   return (
-    <Layout>
+    <div>
       <Notices />
-    </Layout>
+    </div>
   )
 }
 

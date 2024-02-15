@@ -12,12 +12,26 @@
     @apply text-[#1e2020]
 }
 
+.nav_lp {
+    @apply text-[#011F4B]
+}
+.nav_lp:hover {
+    @apply text-[#1e2020]
+}
+
+.nav_default {
+    @apply text-white
+}
+.nav_default:hover {
+    @apply text-[#1e2020]
+}
+
 @layer utilities {
     .nav{
-        @apply relative font-mono tracking-[1px] py-4 px-[0.75vw] text-white bg-transparent
+        @apply relative font-mono tracking-[1px] py-4 px-[0.75vw] bg-transparent
     }
     .nav:hover {
-        @apply text-[#1e2020] bg-gradient-to-b from-[#4d2d1c40] to-transparent
+        @apply bg-gradient-to-b from-[#4d2d1c40] to-transparent
     }
     .nav::after{
         @apply content-[''] bg-[#1e2020] h-[3px] w-[0%] left-1/2 bottom-[15px] rounded-xl absolute duration-300 mx-auto

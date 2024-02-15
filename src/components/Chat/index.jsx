@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../Header'
 
 function Chat() {
   return (
-    <div>Chat</div>
+    <div>
+      <Header />
+      Chat
+    </div>
   )
 }
 
