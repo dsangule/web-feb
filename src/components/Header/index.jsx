@@ -41,7 +41,7 @@ function Header() {
 
         <div className={`${styles.nav_bar} flex mr-3`}>
           {navItems.map(item=>(
-              <Link href={item.href} className={`${styles.nav} ${(item.href==pathname)?styles.active_nav:''}`}>{item.name}</Link>
+              <Link key={item.key} href={item.href} className={`${styles.nav} ${(item.href==pathname)?styles.active_nav:''}`}>{item.name}</Link>
           ))}
         </div>
     </nav>
