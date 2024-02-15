@@ -27,6 +27,11 @@ function Header({headStyle}) {
       name: "About Us",
       href: "/about"
     },
+    {
+      key: 5,
+      name: "Abhishek",
+      href: "/about"
+    },
   ]
   return (
     <nav 
