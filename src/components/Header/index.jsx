@@ -1,7 +1,33 @@
+"use client";
+
 import Link from 'next/link'
 import styles from './Header.module.css'
+import { usePathname } from 'next/navigation';
 
 function Header() {
+  const pathname = usePathname(); 
+  const navItems = [
+    {
+      name: "Clubs",
+      href: "/clubs"
+    },
+    {
+      name: "Community Chat",
+      href: "/chat"
+    },
+    {
+      name: "Events",
+      href: "/events"
+    },
+    {
+      name: "Notices",
+      href: "/notices"
+    },
+    {
+      name: "About Us",
+      href: "/about"
+    },
+  ]
   return (
     <nav className="w-full flex justify-between">
         <Link href='/' className="my-auto text-white pl-12 text-2xl">
@@ -9,11 +35,9 @@ function Header() {
         </Link>
 
         <div className={`${styles.nav_bar} flex mr-3`}>
-            <Link href='/clubs' className={`${styles.nav}`}>Clubs</Link>
-            <Link href='/chat' className={`${styles.nav}`}>Community Chat</Link>
-            <Link href='/events' className={`${styles.nav}`}>Events</Link>
-            <Link href='/notices' className={`${styles.nav}`}>Notices</Link>
-            <Link href='/about' className={`${styles.nav}`}>About Us</Link>
+          {navItems.map(item=>(
+              <Link href={item.href} className={`${styles.nav} ${(item.href==pathname)?styles.active_nav:''}`}>{item.name}</Link>
+          ))}
         </div>
     </nav>
   )

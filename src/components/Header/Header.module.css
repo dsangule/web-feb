@@ -1,16 +1,20 @@
 @tailwind utilities;
 
 .nav_bar{
-    font-size: 32px;
+    font-size: 2vw;
     font-weight: 400;
     line-height: 58px;
     letter-spacing: 0em;
     text-align: left;
 }
 
+.active_nav {
+    @apply text-[#1e2020]
+}
+
 @layer utilities {
     .nav{
-        @apply relative font-mono tracking-[1px] p-4 text-white bg-transparent
+        @apply relative font-mono tracking-[1px] py-4 px-[0.75vw] text-white bg-transparent
     }
     .nav:hover {
         @apply text-[#1e2020] bg-gradient-to-b from-[#4d2d1c40] to-transparent
