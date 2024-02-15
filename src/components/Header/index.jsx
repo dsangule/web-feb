@@ -8,22 +8,27 @@ function Header() {
   const pathname = usePathname(); 
   const navItems = [
     {
+      key: 1,
       name: "Clubs",
       href: "/clubs"
     },
     {
+      key: 2,
       name: "Community Chat",
       href: "/chat"
     },
     {
+      key: 3,
       name: "Events",
       href: "/events"
     },
     {
+      key: 4,
       name: "Notices",
       href: "/notices"
     },
     {
+      key: 5,
       name: "About Us",
       href: "/about"
     },
