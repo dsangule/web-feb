@@ -11,13 +11,15 @@ function ClubItem({item}) {
       flexDirection: (item.imgpos==="l")?"row":"row-reverse",
       paddingLeft: "30px",
       paddingRight: "30px",
+      marginTop: "30px",
     }}>
       <Image src={item.logosrc} height={300} width={300} className="rounded-full h-[300px] my-auto" />
       <div className="m-[30px]">
         <p className="font-oswald font-bold text-5xl mb-5"
           style={{
             background: item.color,
-            
+            backgroundClip: "text",
+            color: "transparent",
           }}
         >
           {item.name}
