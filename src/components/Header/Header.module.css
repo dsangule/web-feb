@@ -28,7 +28,7 @@
 
 @layer utilities {
     .nav{
-        @apply relative font-mono tracking-[1px] py-4 px-[0.75vw] bg-transparent
+        @apply relative font-koulen tracking-[1px] py-4 px-[0.75vw] bg-transparent
     }
     .nav:hover {
         @apply bg-gradient-to-b from-[#4d2d1c40] to-transparent

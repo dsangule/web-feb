@@ -27,20 +27,15 @@ function Header({headStyle}) {
       name: "About Us",
       href: "/about"
     },
-    {
-      key: 5,
-      name: "Abhishek",
-      href: "/about"
-    },
   ]
   return (
     <nav 
     className={`
-    w-full flex justify-between 
+    w-full flex justify-between top-0 sticky z-50
     ${(headStyle==="1"?"":"bg-gradient-to-t from-[#454C40] to-[#545539]")}
     `}>
         <Link href='/' className="my-auto text-white pl-12 text-2xl">
-          <h2 className="font-mono text-4xl">JNU Sayz</h2>
+          <h2 className="font-koulen text-4xl">JNU Sayz</h2>
         </Link>
 
         <div className={`${styles.nav_bar} flex mr-3`}>
