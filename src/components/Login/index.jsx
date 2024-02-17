@@ -21,9 +21,9 @@ function Login() {
               <input type="password" placeholder="Password" required />
               <LockOutlined className={styles.icon} />
             </div>
-            <button className='w-40' type="submit">LOGIN</button>
+            <button className='w-40 font-arimo' type="submit">LOGIN</button>
             <div className={`${styles.register_link}`}>
-              <p className='font-bold'>Don't have an account? <Link href="/register" className={styles.register}>Register</Link></p>  
+              <p className='font-bold font-arimo'>Don't have an account? <Link href="/register" className={styles.register}>Sign Up</Link></p>  
             </div>
           </div>
         </form>

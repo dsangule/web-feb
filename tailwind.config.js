@@ -15,6 +15,9 @@ module.exports = {
       fontFamily: {
         koulen: ['Koulen'],
         oswald: ['Oswald'],
+        anek: ['"Anek Kannada"'],
+        arimo: ['Arimo'],
+        akshar: ['Akshar'],
       }
     },
   },

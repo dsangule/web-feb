@@ -46,7 +46,7 @@ function Clubs() {
     <>
       <Header/>
       <div className="bg-[#B7BECF]">
-        <div className="mx-[10%] py-[5%]">
+        <div className="mx-[5%] py-[5%]">
           {items.map((item)=>(
             <ClubItem key={item.key} item={item}/>
           ))}
