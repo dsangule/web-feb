@@ -2,7 +2,7 @@
 
 import React, { useRef } from 'react'
 import Header from '../Header'
-import styles from './login.module.css'
+import styles from './register.module.css'
 import Image from "next/image";
 import { UserOutlined, LockOutlined, MailOutlined } from '@ant-design/icons';
 import Link from 'next/link';
