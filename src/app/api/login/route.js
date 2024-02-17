@@ -1,12 +1,12 @@
 import { db } from "@/lib/db";
 
-export async function POST(req) {
+export async function POST(req, res) {
 
     if(req.method !== 'POST'){
         return;
     }
 
-    const { username=null, password=null } = req.body
+    const { username=null, password=null } = await req.json()
 
     const query = `SELECT * FROM users WHERE username = "${username}" and password = "${password}"`;
     const values = [ username, password ];
