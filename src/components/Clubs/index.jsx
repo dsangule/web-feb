@@ -27,7 +27,7 @@ const items = [
     desc: "Kreeda the sports club is the largest club of JNU SE. Their events are large in scale and make full use of the vast sporting facilities available in the campus. You can expect branch-wise tournaments or even year-wise tournaments to take place at regular intervals. Kreeda also includes indoor sports under its ambit so budding chess players can look forward to plenty of events to satisfy their competitive streak.",
     color: "linear-gradient(180deg, #7DC5DE 100%, #86E8C1 100%)",
     bgcolor: "#000000",
-    logosrc: "/clubs/loop.jpeg",
+    logosrc: "/clubs/kreeda.jpeg",
     imgpos: "l"
   },
   {
@@ -36,7 +36,7 @@ const items = [
     desc: "Co.L.D. is the Computer Science Club of SE, JNU. We help the students of SE to come together and become a part of the institute's coding community. With a diverse Core Committee running the club, we combine individual expertise and insight to help our members grow their professional skills.",
     color: "linear-gradient(180deg, #13AAE6 0%, #012061 100%)",
     bgcolor: "#000000",
-    logosrc: "/clubs/volt.jpeg",
+    logosrc: "/clubs/cold.jpeg",
     imgpos: "r"
   },
 ]
@@ -46,7 +46,7 @@ function Clubs() {
     <>
       <Header/>
       <div className="bg-[#B7BECF]">
-        <div className="mx-[5%] py-[5%]">
+        <div className="mx-[5%] py-[2.5%]">
           {items.map((item)=>(
             <ClubItem key={item.key} item={item}/>
           ))}

@@ -15,9 +15,9 @@ function About() {
       <div className="font-anek font-semibold text-center text-[17px]" style={{paddingTop:"30px", paddingBottom: "41px"}}>All the photos on this website are courtesy of @jnu_photos, which showcases the beauty and diversity of Jawaharlal Nehru University.</div>
       <div className="flex my-auto mx-auto pt-7 w-fit max-w-[50vw] justify-center"
       style={{paddingBottom: "29px"}}>
-          <Image src={'/Au_LN.svg'} width={48} height={48} className="mx-4 max-w-[20%]" />
-          <Image src={'/Au_IN.svg'} width={48} height={48} className="mx-4 max-w-[20%]" />
-          <Image src={'/Au_DC.svg'} width={48} height={48} className="mx-4 max-w-[20%]" />
+          <Image src={'/icons/Au_LN.svg'} width={48} height={48} className="mx-4 max-w-[20%]" />
+          <Image src={'/icons/Au_IN.svg'} width={48} height={48} className="mx-4 max-w-[20%]" />
+          <Image src={'/icons/Au_DC.svg'} width={48} height={48} className="mx-4 max-w-[20%]" />
         </div>
       </div>
     </div>

@@ -21,9 +21,9 @@ function LandingPage() {
       </center>
       <div className="bg-gradient-to-b from-[#878866a0] to-[#545744a0] h-24 w-full fixed bottom-0">
         <div className="flex my-auto mx-auto pt-7 w-fit max-w-[50vw] justify-center">
-          <Image src={'/LinkedIn.svg'} width={50} height={50} className="mx-4 max-w-[20%]" />
-          <Image src={'/Instagram.svg'} width={50} height={50} className="mx-4 max-w-[20%]" />
-          <Image src={'/Discord.svg'} width={50} height={50} className="mx-4 max-w-[20%]" />
+          <Image src={'/icons/LinkedIn.svg'} width={50} height={50} className="mx-4 max-w-[20%]" />
+          <Image src={'/icons/Instagram.svg'} width={50} height={50} className="mx-4 max-w-[20%]" />
+          <Image src={'/icons/Discord.svg'} width={50} height={50} className="mx-4 max-w-[20%]" />
         </div>
       </div>
     </div>

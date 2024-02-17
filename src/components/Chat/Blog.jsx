@@ -46,7 +46,7 @@ function Blog({}) {
             borderRadius: '20px 0px 0px 20px',
             fontSize: '15px',
           }}>
-            XXX&nbsp;<UpSquareOutlined style={{fontSize: "20px"}} />
+            XXX&nbsp;<UpSquareOutlined style={{fontSize: "20px", marginTop: "-7px"}} />
           </div>
           <div className='font-arimo font-bold' style={{
             display: "flex",
@@ -59,7 +59,7 @@ function Blog({}) {
             borderRadius: '0px 20px 20px 0px',
             fontSize: '15px',
           }}>
-            <DownSquareOutlined style={{fontSize: "20px"}} />&nbsp;XXX
+            <DownSquareOutlined style={{fontSize: "20px", marginTop: "-7px"}} />&nbsp;XXX
           </div>
         </div>
       </div>

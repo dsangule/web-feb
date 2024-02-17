@@ -47,11 +47,11 @@ function Login() {
   }
 
   return (
-    <>
+    <div className="bg-[url('/campus.jpg')] h-screen bg-cover bg-fixed bg-no-repeat bg-center overflow-y-scroll">
       <Header />
-      <div className="bg-[url('/campus.jpg')] h-screen bg-cover bg-fixed bg-no-repeat bg-center flex-col overflow-scroll">
+      <div className="flex-col">
         <form onSubmit={submitHandler}>
-          <div className={`${styles.wrapper} mx-auto align-middle mt-12 px-8 py-4 justify-center`}>
+          <div className={`${styles.wrapper} mx-auto align-middle my-12 px-8 py-4 justify-center`}>
             <Image src={'/JNU-says-LP.svg'} width={400} height={400} className="align-middle my-12 m-auto max-w-[80%]"/>
             <div className={styles.input_box}>
               <input type="text" ref={usernameInputRef} placeholder="Username" required />
@@ -68,7 +68,7 @@ function Login() {
           </div>
         </form>
       </div>
-    </>
+    </div>
   )
 }
 
