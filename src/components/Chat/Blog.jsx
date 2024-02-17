@@ -1,5 +1,5 @@
 import React from 'react'
-import { UpSquareOutlined, DownSquareOutlined } from '@ant-design/icons';
+import { UpSquareOutlined, DownSquareOutlined, UserOutlined } from '@ant-design/icons';
 import Image from 'next/image';
 
 
@@ -21,7 +21,6 @@ function Blog({}) {
         textAlign: "bottom",
       }}>
         <div className="h-fit font-arimo font-bold flex items-end" style={{
-          
           margin: "1%",
           backgroundColor: "#D9D9D9",
           paddingBottom: "25px",
@@ -30,9 +29,10 @@ function Blog({}) {
           paddingRight: "5px",
           borderRadius: '15px',
           fontSize: '20px',
-
         }}>
-          <Image src={"/user.svg"} height={60} width={60} className="mr-2 -mb-3" />
+          <div className="border-[4px] mr-3 -mb-2 rounded-full border-black">
+            <UserOutlined style={{fontSize: "45px"}} />
+          </div>
           @username
         </div>
         <div className="flex h-[40px]">
@@ -40,7 +40,7 @@ function Blog({}) {
             display: "flex",
             backgroundColor: "#D9D9D9",
             paddingTop: "7px",
-            paddingLeft: "10px",
+            paddingLeft: "15px",
             paddingRight: "10px",
             border: '2px solid #000000',
             borderRadius: '20px 0px 0px 20px',
@@ -53,8 +53,9 @@ function Blog({}) {
             backgroundColor: "#D9D9D9",
             paddingTop: "7px",
             paddingLeft: "10px",
-            paddingRight: "10px",
+            paddingRight: "15px",
             border: '2px solid #000000',
+            borderLeft: '1px',
             borderRadius: '0px 20px 20px 0px',
             fontSize: '15px',
           }}>
