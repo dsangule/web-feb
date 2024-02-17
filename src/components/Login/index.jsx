@@ -49,7 +49,7 @@ function Login() {
   return (
     <>
       <Header />
-      <div className="bg-[url('/campus.jpg')] h-screen bg-cover bg-no-repeat bg-center flex-col overflow-hidden">
+      <div className="bg-[url('/campus.jpg')] h-screen bg-cover bg-fixed bg-no-repeat bg-center flex-col overflow-hidden">
         <form onSubmit={submitHandler}>
           <div className={`${styles.wrapper} mx-auto align-middle mt-12 px-8 py-4 justify-center`}>
             <Image src={'/JNU-says-LP.svg'} width={400} height={400} className="align-middle my-12 m-auto max-w-[80%]"/>
