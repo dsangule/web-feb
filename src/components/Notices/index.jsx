@@ -20,7 +20,8 @@ function Notices() {
         height: "41px",
         marginTop: "28px",
         paddingLeft: "10px",
-        paddingTop: "8px"
+        paddingTop: "8px",
+        borderRadius: "15px",
 
       }}>
         <p>
@@ -35,7 +36,8 @@ function Notices() {
         height: "41px",
         marginTop: "28px",
         paddingLeft: "10px",
-        paddingTop: "8px"
+        paddingTop: "8px",
+        borderRadius: "15px",
       }}>
         <p>
           second line
@@ -50,6 +52,7 @@ function Notices() {
         marginTop: "28px",
         paddingLeft: "10px",
         paddingTop: "8px",
+        borderRadius: "15px",
       }}>
         <p>
           third line
@@ -73,7 +76,8 @@ function Notices() {
         height: "100px",
         marginTop: "28px",
         paddingLeft: "10px",
-        paddingTop: "8px"
+        paddingTop: "8px",
+        borderRadius: "15px",
       }}>
         <p>
           first line
@@ -87,7 +91,8 @@ function Notices() {
         height: "100px",
         marginTop: "28px",
         paddingLeft: "10px",
-        paddingTop: "8px"
+        paddingTop: "8px",
+        borderRadius: "15px",
       }}>
         <p>
           second line
@@ -102,7 +107,8 @@ function Notices() {
         height: "100px",
         marginTop: "28px",
         paddingLeft: "10px",
-        paddingTop: "8px"
+        paddingTop: "8px",
+        borderRadius: "15px",
 
       }}>
         <p>
