@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from '../Header'
-import Blog from './Blog'
+import BlogItem from './BlogItem'
 
-function Chat() {
+function Blog() {
   const items = [
     {
       key: 1,
@@ -46,11 +46,11 @@ function Chat() {
       <Header />
       <div>
         {items.map((item)=>(
-          <Blog key={item.key} item={item}/>
+          <BlogItem key={item.key} item={item}/>
         ))}
       </div>
     </div>
   )
 }
 
-export default Chat
+export default Blog
