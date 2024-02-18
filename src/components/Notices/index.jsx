@@ -79,7 +79,7 @@ The Jawaharlal Nehru University will withdraw all the notices issued against the
         marginLeft: '98px',
         backgroundColor: "#D9D9D9",
         width: "90%",
-        marginTop: "28px",
+        marginTop: "35px",
         paddingLeft: "20px",
         paddingRight: "20px",
         paddingBottom: "8px",
@@ -90,11 +90,12 @@ The Jawaharlal Nehru University will withdraw all the notices issued against the
       }}>
         WEB FEB
         <div className=' font-akshar' style={{
-          fontSize: "20px",
+          fontSize: "17px",
           fontWeight: 'lighter',
           paddingLeft: "10px",  
           paddingRight: "10px",
-          color: '#000000B5'
+          color: '#000000B5',
+          paddingBottom:"10px"
         }}>
           Are you interested in web development? Do you want to showcase your skills and creativity? If yes, then don’t miss this opportunity to participate in a web development contest organized by the Computer Science Department. The contest will run from 12th to 18th February, and you can register online from 7th to 14th February. You can form a team of up to four members, and the contest is open to all first, second, and third year students.
         </div>
@@ -103,7 +104,7 @@ The Jawaharlal Nehru University will withdraw all the notices issued against the
         marginLeft: '98px',
         backgroundColor: "#D9D9D9",
         width: "90%",
-        marginTop: "28px",
+        marginTop: "35px",
         paddingLeft: "20px",
         paddingRight: "20px",
         paddingBottom: "8px",
@@ -115,11 +116,12 @@ The Jawaharlal Nehru University will withdraw all the notices issued against the
         Google Developer Student Clubs
         
         <div className=' font-akshar' style={{
-          fontSize: "20px",
+          fontSize: "17px",
           fontWeight: 'lighter',
           paddingLeft: "10px",  
           paddingRight: "10px",
-          color: '#000000B5'
+          color: '#000000B5',
+          paddingBottom:"10px"
         }}>
 If you are passionate about Android development and want to learn the basics of Kotlin, then join us for an Android Workshop hosted by the Google Developer Student Clubs at Jawaharlal Nehru University, New Delhi. The workshop will cover the installation and setup of Android Studio, the fundamentals of Kotlin programming language, and how to build a simple Android app. The workshop will be held on 17th February, 2024, from 2:30 pm to 5 pm at the ELC. You will also get to know the roadmap and queries for the upcoming Android projects and events.
         </div>
@@ -128,7 +130,7 @@ If you are passionate about Android development and want to learn the basics of 
         marginLeft: '98px',
         backgroundColor: "#D9D9D9",
         width: "90%",
-        marginTop: "28px",
+        marginTop: "35px",
         paddingLeft: "20px",
         paddingRight: "20px",
         paddingBottom: "8px",
@@ -140,11 +142,12 @@ If you are passionate about Android development and want to learn the basics of 
       }}>
         KREEDA- THE SPORTS CLUB OF SOE
         <div className=' font-akshar' style={{
-          fontSize: "20px",
+          fontSize: "17px",
           fontWeight: 'lighter',
           paddingLeft: "10px",  
           paddingRight: "10px",
-          color: '#000000B5'
+          color: '#000000B5',
+          paddingBottom:"10px"
         }}>
           Get ready for some action and excitement as KREEDA- THE SPORTS CLUB OF SOE presents 2K 24 INTER - BATCH, the annual sporting event of School of Engineering. The event will take place from 27th February to 3rd March, and will feature various sports competitions such as cricket, football, basketball, volleyball, badminton, chess, and more.
         </div>
