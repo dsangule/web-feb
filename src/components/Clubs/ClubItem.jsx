@@ -7,7 +7,7 @@ function ClubItem({item}) {
     <div 
     className="bg-black opacity-95 duration-300 hover:opacity-100 hover:drop-shadow-2xl"
     style={{
-      height: "360px",
+      minHeight:"360px",
       borderRadius: (item.imgpos==="l")?"180px 10px 10px 180px":"10px 180px 180px 10px",
       display: "flex",
       flexDirection: (item.imgpos==="l")?"row":"row-reverse",
