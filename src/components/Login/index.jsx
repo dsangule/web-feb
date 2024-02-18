@@ -1,13 +1,22 @@
 "use client";
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from '../Header'
 import styles from './login.module.css'
 import Image from "next/image";
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 function Login() {
+
+  const router = useRouter();
+  const [username, setUsername] = useState(localStorage.getItem("username"));
+  useEffect(()=>{
+    if (username !== "" && username !== null) {
+      router.replace('/');
+    }
+  }, [username]);
 
   const usernameInputRef = useRef();
   const passwordInputRef = useRef();
@@ -38,6 +47,8 @@ function Login() {
       const result = await authUser(enteredUsername, enteredPassword);
       if(result === '1'){
         confirm("Login successful!");
+        localStorage.setItem("username", enteredUsername);
+        router.replace('/');
       } else {
         alert("Wrong credentials!");
       }
