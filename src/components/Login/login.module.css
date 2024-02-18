@@ -66,3 +66,7 @@
     font-weight: 600;
 }
 
+.register_link .register:hover {
+    text-decoration: underline;
+}
+
