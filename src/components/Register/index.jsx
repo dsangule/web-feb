@@ -130,7 +130,7 @@ function Register() {
               <UserOutlined className={styles.icon} />
             </div>
             <div className={styles.input_box}>
-              <input type="text" placeholder="Password" ref={passwordInputRef} required />
+              <input type="password" placeholder="Password" ref={passwordInputRef} required />
               <LockOutlined className={styles.icon} />
             </div>
             <div className={styles.input_box}>
