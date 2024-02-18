@@ -1,13 +1,13 @@
-import Events from '@/components/Events'
+import Blog from '@/components/Blog'
 import Layout from '@/components/Layout'
 import React from 'react'
 
-function events() {
+function blog() {
   return (
     <Layout>
-      <Events />
+      <Blog />
     </Layout>
   )
 }
 
-export default events
+export default blog

@@ -1,9 +1,7 @@
 import React from 'react'
-import { UpSquareOutlined, DownSquareOutlined, UserOutlined } from '@ant-design/icons';
-import Image from 'next/image';
+import { UpOutlined, DownOutlined, UserOutlined } from '@ant-design/icons';
 
-
-function Blog({}) {
+function BlogItem({}) {
   return (
     <div style={{
       marginLeft: "10%",
@@ -38,15 +36,16 @@ function Blog({}) {
         <div className="flex h-[40px]">
           <div className='font-arimo font-bold' style={{
             display: "flex",
-            backgroundColor: "#D9D9D9",
+            // backgroundColor: "#D9D9D9",
             paddingTop: "7px",
             paddingLeft: "15px",
             paddingRight: "10px",
             border: '2px solid #000000',
             borderRadius: '20px 0px 0px 20px',
-            fontSize: '15px',
+            fontSize: '20px',
+            lineHeight: "20px",
           }}>
-            XXX&nbsp;<UpSquareOutlined style={{fontSize: "20px", marginTop: "-7px"}} />
+            XXX&nbsp;<UpOutlined style={{fontSize: "20px"}} />
           </div>
           <div className='font-arimo font-bold' style={{
             display: "flex",
@@ -57,9 +56,10 @@ function Blog({}) {
             border: '2px solid #000000',
             borderLeft: '1px',
             borderRadius: '0px 20px 20px 0px',
-            fontSize: '15px',
+            fontSize: '20px',
+            lineHeight: "20px",
           }}>
-            <DownSquareOutlined style={{fontSize: "20px", marginTop: "-7px"}} />&nbsp;XXX
+            <DownOutlined style={{fontSize: "20px"}} />&nbsp;XXX
           </div>
         </div>
       </div>
@@ -96,4 +96,4 @@ function Blog({}) {
   )
 }
 
-export default Blog
+export default BlogItem

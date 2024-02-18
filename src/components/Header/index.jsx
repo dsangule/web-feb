@@ -14,8 +14,8 @@ function Header({headStyle}) {
     },
     {
       key: 2,
-      name: "Community Chat",
-      href: "/chat"
+      name: "Community Blog",
+      href: "/blog"
     },
     {
       key: 3,
