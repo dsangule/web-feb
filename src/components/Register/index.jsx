@@ -1,12 +1,21 @@
 "use client";
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from '../Header'
 import styles from './register.module.css'
 import Image from "next/image";
 import { UserOutlined, LockOutlined, MailOutlined } from '@ant-design/icons';
+import { useRouter } from 'next/navigation';
 
 function Register() {
+
+  const router = useRouter();
+  const [username, setUsername] = useState(localStorage.getItem("username"));
+  useEffect(()=>{
+    if (username !== "" && username !== null) {
+      router.replace('/');
+    }
+  }, [username]);
 
   const firstNameInputRef = useRef("");
   const lastNameInputRef = useRef("");
@@ -97,6 +106,7 @@ function Register() {
       );
       if (result.success === 1) {
         alert("Registration Successful!");
+        router.replace('/login');
       } else {
         alert("Registration Unsuccessful");
       }

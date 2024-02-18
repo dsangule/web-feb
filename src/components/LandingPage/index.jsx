@@ -5,9 +5,12 @@ import Header from "../Header";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import styles from './landingpage.module.css';
+import { useState } from "react";
 
 function LandingPage() {
   const router = useRouter();
+  const [username, setUsername] = useState(localStorage.getItem("username"));
+  const loggedIn = (username !== "" && username !== null)?true:false;
   return (
     <div className="bg-[url('/LP-bg.jpeg')] bg-cover bg-no-repeat bg-center h-screen flex-col overflow-hidden">
       <div className="bg-gradient-to-b from-[#A7BDDCA0] to-[#B7BECF] h-48 -skew-y-2 -translate-y-20">
@@ -19,7 +22,16 @@ function LandingPage() {
       <center>
         <div className={`${styles.wrapper}`}>
         
-        <Button type="submit" shape="round" className=" h-10 w-40 font-bold font-arimo border-2 " onClick={()=>{router.push('/login')}}>LOGIN</Button>
+        {loggedIn 
+        ? <Button 
+        type="submit" shape="round" 
+        className=" h-10 w-40 font-bold font-arimo border-2 " 
+        onClick={()=>{localStorage.removeItem("username"); setUsername("")}}>LOG OUT</Button> 
+        : <Button 
+        type="submit" shape="round" 
+        className=" h-10 w-40 font-bold font-arimo border-2 " 
+        onClick={()=>{router.push('/login')}}>LOGIN</Button> }
+        
         
         </div>
       </center>
