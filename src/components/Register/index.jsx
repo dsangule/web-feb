@@ -10,8 +10,9 @@ import { useRouter } from 'next/navigation';
 function Register() {
 
   const router = useRouter();
-  const [username, setUsername] = useState(localStorage.getItem("username"));
+  const [username, setUsername] = useState("");
   useEffect(()=>{
+    setUsername(localStorage.getItem("username"));
     if (username !== "" && username !== null) {
       router.replace('/');
     }
