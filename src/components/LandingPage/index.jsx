@@ -5,11 +5,12 @@ import Header from "../Header";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import styles from './landingpage.module.css';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function LandingPage() {
   const router = useRouter();
-  const [username, setUsername] = useState(localStorage.getItem("username"));
+  const [username, setUsername] = useState("");
+  useEffect(()=>{setUsername(localStorage.getItem("username"))},[username]);
   const loggedIn = (username !== "" && username !== null)?true:false;
   return (
     <div className="bg-[url('/LP-bg.jpeg')] bg-cover bg-no-repeat bg-center h-screen flex-col overflow-hidden">
