@@ -19,7 +19,7 @@ function LandingPage() {
       <center>
         <div className={`${styles.wrapper}`}>
         
-        <Button type="submit" shape="round" className=" h-10 w-40 font-bold font-arimo  " onClick={()=>{router.push('/login')}}>LOGIN</Button>
+        <Button type="submit" shape="round" className=" h-10 w-40 font-bold font-arimo border-2 " onClick={()=>{router.push('/login')}}>LOGIN</Button>
         
         </div>
       </center>
