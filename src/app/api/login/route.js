@@ -6,7 +6,7 @@ export async function POST(req, res) {
         return;
     }
 
-    const { username=null, password=null } = await req.json()
+    const { username, password } = await req.json()
 
     const query = `SELECT * FROM users WHERE username = "${username}" and password = "${password}"`;
     const values = [ username, password ];
