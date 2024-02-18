@@ -33,7 +33,7 @@ function BlogItem({}) {
           </div>
           @username
         </div>
-        <div className="flex h-[40px]">
+        {/* <div className="flex h-[40px]">
           <div className='font-arimo font-bold' style={{
             display: "flex",
             // backgroundColor: "#D9D9D9",
@@ -61,7 +61,7 @@ function BlogItem({}) {
           }}>
             <DownOutlined style={{fontSize: "20px"}} />&nbsp;XXX
           </div>
-        </div>
+        </div> */}
       </div>
       
         <div className="font-arimo" 
