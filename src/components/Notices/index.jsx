@@ -8,13 +8,14 @@ function Notices() {
       <h1 className="font-oswald" style={{
         fontSize: "45px",
         color: '#011F4B',
-        marginLeft: '75px',
+        marginLeft: '4%',
         marginTop: "28px",
+        fontWeight: 'bold'
       }}>
         Notices
       </h1>
       <div className="font-arimo " style={{
-        marginLeft: '98px',
+        marginLeft: '5%',
         backgroundColor: "#D9D9D9",
         width: "90%",
         marginTop: "28px",
@@ -32,7 +33,7 @@ function Notices() {
 TOI got access to the show-cause notice received by Aishe Ghosh, a PhD scholar at the Centre for Inner Asian Studies, School of International Studies.
       </div>
       <div style={{
-        marginLeft: '98px',
+        marginLeft: '5%',
         backgroundColor: "#D9D9D9",
         width: "90%",
         marginTop: "28px",
@@ -48,7 +49,7 @@ TOI got access to the show-cause notice received by Aishe Ghosh, a PhD scholar a
         Four representatives of the Jawaharlal Nehru University Students Union (JNUSU) and 12 hostel presidents have received an inquiry notice for protesting outside the Vice Chancellor's residence, according to an official notification.
       </div>
       <div style={{
-        marginLeft: '98px',
+        marginLeft: '5%',
         backgroundColor: "#D9D9D9",
         width: "90%",
         marginTop: "28px",
@@ -69,14 +70,15 @@ The Jawaharlal Nehru University will withdraw all the notices issued against the
       <h2 className="font-oswald" style={{
         fontSize: "45px",
         color: '#011F4B',
-        marginLeft: "75px",
+        marginLeft: "4%",
         marginTop: "100px",
+        fontWeight: 'bold'
       }}>
         Events
       </h2>
       <div className=' font-akshar' style={{
 
-        marginLeft: '98px',
+        marginLeft: '5%',
         backgroundColor: "#D9D9D9",
         width: "90%",
         marginTop: "35px",
@@ -101,7 +103,7 @@ The Jawaharlal Nehru University will withdraw all the notices issued against the
         </div>
       </div>
       <div className=' font-akshar' style={{
-        marginLeft: '98px',
+        marginLeft: '5%',
         backgroundColor: "#D9D9D9",
         width: "90%",
         marginTop: "35px",
@@ -127,7 +129,7 @@ If you are passionate about Android development and want to learn the basics of 
         </div>
       </div>
       <div className=' font-akshar' style={{
-        marginLeft: '98px',
+        marginLeft: '5%',
         backgroundColor: "#D9D9D9",
         width: "90%",
         marginTop: "35px",
